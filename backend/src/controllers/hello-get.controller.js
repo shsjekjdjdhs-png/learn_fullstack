@@ -18,3 +18,6 @@ export const helloController4 = (req, res) => {
   res.send("Hello FIVE");
 };
 
+export const dynamicHelloController = (req, res) => {
+  res.send("Hello " + req.params.name);
+};

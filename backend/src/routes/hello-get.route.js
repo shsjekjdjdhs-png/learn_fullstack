@@ -4,8 +4,9 @@ import {
   helloController1,
   helloController2,
   helloController3,
-  helloController4
-} from "../controllers/hello.controller.js";
+  helloController4,
+  dynamicHelloController
+} from "../controllers/hello-get.controller.js";
 
 const router = Router();
 
@@ -15,7 +16,5 @@ router.get("/three", helloController2);
 router.get("/four", helloController3);
 router.get("/five", helloController4);
 
-router.get("/:name", (req, res) => {
-  res.send(`Hello, ${req.params.name}!`);
-});
+router.get("/:name", dynamicHelloController);
 export default router;
