@@ -1,0 +1,19 @@
+# Node modules (both backend & frontend)
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Build files
+dist/
+build/
+.next/
+
+# Temporary files
+*.tmp
+.cache/
