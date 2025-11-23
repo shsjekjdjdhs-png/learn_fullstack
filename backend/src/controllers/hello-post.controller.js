@@ -1,3 +1,4 @@
+// Read
 import Joi from "joi";
 export const createHelloPost = (req, res) => {
   const { message } = req.body;
