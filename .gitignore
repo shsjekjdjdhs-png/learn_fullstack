@@ -1,19 +1,54 @@
-# Node modules (both backend & frontend)
+# ========================
+#   NODE + NEXT.JS PROJECT
+# ========================
+
+# Node modules (backend & frontend)
 node_modules/
 
 # Logs
 logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Environment variables
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Build files
+# Build output (Next.js)
+.next/
+out/
 dist/
 build/
-.next/
+
+# Next.js cache
+.next/cache/
+.cache/
+
+# Typescript build
+*.tsbuildinfo
 
 # Temporary files
 *.tmp
-.cache/
+*.temp
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Local env overrides
+*.local
+
+# PM2 logs
+pids/
+*.pid
+*.seed
+*.pid.lock
